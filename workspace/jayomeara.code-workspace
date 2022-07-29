@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "../../flask-template-files"
+		},
+		{
 			"path": "../../JulyAug22PythonCohort"
 		},
 		{
