@@ -1,4 +1,4 @@
-#!/Users/jayomeara/_code/capstone/joules_score/djangoPy3Env/bin/python3
+#!/Users/jayomeara/_coding/capstone/joules_score/djangoPy3Env/bin/python3
 from django.core import management
 
 if __name__ == "__main__":
