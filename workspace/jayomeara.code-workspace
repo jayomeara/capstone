@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../../flask-template-files"
+		},
+		{
+			"path": "../../September22Cohort-ProjectsAndAlgorithms"
 		}
 	],
 	"settings": {}
