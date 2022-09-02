@@ -7,32 +7,25 @@ https://github.com/jayomeara/capstone/tree/main/joules_score
 ## Project Description:
 Our total household energy use is not simple to calculate. We provide your household Joule Rating®.
 
-- Comprehensive energy tracker and use assesment.
-- Convert total energy consumption to Joules/Month aka Joule Rating®
-- Color ranking based on fossil fuel consumption
-- Yearly energy cost including vehicals
+- Provides 12 months of energy use review.
+– Database: User - House - Vehicle - monthUse
+- Show 12 month energy info on graph/table
+- Summary of yearly energy use as a 'score' (likely gigajoules/day use)
 
 ## New Programming Concepts:
-Django deployment, third party API.
+Django deployment, launched on aws, SQL relationships (one user to multiple homes/cars, one user to multiple months)
 
 ## Week 1 Features:
-website designed, login and registration, basic information capture, overall score designed
+website designed, login and registration, basic information capture, CRUD commands working
 
 ## Week 2 Features:
 
-API integration, launch on e2
+API integration, launch on e2, score calculated
 
 ## Beyond Week 2...
-- API to pull solar data based on zip code for solar options
 - Cost per kWh per source.
-- Cost increase with renuable sources
-- Cost savings based on switch to electric vehical
-- Smart grid high cost vs low cost energy use comparision
-- Historical weather data for year over year energy use
-- Comparision to other homes in database
-- Air travel and other forms on consumption
-- Efficency score based on sq/ft, people in the house, miles traveled, ect...
-
+- API: Historical weather data for year over year energy use
+- Comparison to other homes in database
 
 ## Energy Use categories:
 - Home Energy Use
@@ -42,4 +35,4 @@ API integration, launch on e2
 ## Conversions:
 - 1 Therm = 29.3072 kWh
 - 1 Gallon Gas = 33.410 kWh
-- 1 GJ (gigajoule) = 0.0036 X kWh
+- 1 GJ (gigajoule) = 0.0036 kWh
