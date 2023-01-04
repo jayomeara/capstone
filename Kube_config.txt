@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Config
+clusters:
+- cluster:
+    server: https://pibox.jayomeara.usw1.kubegateway.com
+    # We use "skip-tls-verify" because the certificates below may not be
+    # in place on your Kubernetes cluster. We keep traffic encrypted all
+    # the way to your Cluster, which causes an error due to the dns
+    # mismatch. You can use '--advertise-address' with the domain above
+    # to resolve this. Command may vary depending on Kubernetes distro.
+    # This is not required, and we're working on improving this
+    # automatically in the future.
+    # Please contact us if you have any questions!
+    insecure-skip-tls-verify: true
+  name: kubesail-kube-system
+users:
+- name: kubesail-kube-system
+  user:
+    client-key-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJkekNDQVIyZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQWpNU0V3SHdZRFZRUUREQmhyTTNNdGMyVnkKZG1WeUxXTmhRREUyTmpVNE56Y3dNalV3SGhjTk1qSXhNREUxTWpNek56QTFXaGNOTXpJeE1ERXlNak16TnpBMQpXakFqTVNFd0h3WURWUVFEREJock0zTXRjMlZ5ZG1WeUxXTmhRREUyTmpVNE56Y3dNalV3V1RBVEJnY3Foa2pPClBRSUJCZ2dxaGtqT1BRTUJCd05DQUFSUVVGMkJqRXhzNTIzSFRWNjJSVFYrK055cFFKUGxGN3oxUGp2ck1qbWcKTHNXUGZrUy9aaTJxRWVUZFJCV2pOeHd2TTR3RnhIa1cvVG5raC9NR0Myd0pvMEl3UURBT0JnTlZIUThCQWY4RQpCQU1DQXFRd0R3WURWUjBUQVFIL0JBVXdBd0VCL3pBZEJnTlZIUTRFRmdRVVd5Wnk1WnJxV2kwR0lUMjdYU2VXCkFxUzgvVHN3Q2dZSUtvWkl6ajBFQXdJRFNBQXdSUUlnWUhvNEZQR1JacDFhdDFJZ0k4T3dGbVlJblZhbXk4UE8KU2RQTitobi9UWkFDSVFEMjlNamdURmxDTlQ5V0ZoeVBIOXorMjFnZ0FBakRib0FkdmtrV3ZCMjhYUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImlBc2NrQUxBXy1sam9WVjR3VHQyQzlDa0tHQ09QYWdBLV83dlVUWXVTejAifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJqYXlvbWVhcmEtdXNlci10b2tlbiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJqYXlvbWVhcmEtdXNlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImU3NjY2NDU1LWExNDUtNDlmNi05Yzk0LTVjYWQ1Y2M4ZmRiNSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpqYXlvbWVhcmEtdXNlciJ9.DPH0UgGqD-4GVmmKMk_th3v5Isgd_YWg25UU8ZlhJof_NUx2WWW371isPfm_dk3RbP12J5oBI0ZYQ4u69pYpDHQdngq7g6mJm1x41w2CusjItibQzHBzoaL0gj0wEGWOYZ1Wki9yKHoyE0Pv3wjU8SThps4N68qavS4BEj8lSc_ZwErx8-dIXv8bYaBS4vFkb1RN-ce2FN_eewWnI6smLt0BOzEvVAA80uz609kXQkiq9poELJdW7xankQflnrY5dRAvHj71c6_-hgx7U3kLmg2nih_MYh8VnL0HO1vp2vwknkDbpruFFaG815RKcCfyaOZ3OeK1dseWz5RcW07aoQ
+contexts:
+- context:
+    cluster: kubesail-kube-system
+    namespace: default
+    user: kubesail-kube-system
+  name: kubesail-kube-system
+current-context: kubesail-kube-system
+
+
+//192.168.8.12/plex_data    /home/pi/data cifs username=jay,password=red25bull 0 0
