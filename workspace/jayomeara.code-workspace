@@ -22,7 +22,10 @@
 			"path": "../../python_100projects"
 		},
 		{
-			"path": "../../website_arcsports"
+			"path": "../../automationFrameworks_pyTest"
+		},
+		{
+			"path": "../../enviroplus-python"
 		}
 	],
 	"settings": {}
